@@ -13,7 +13,7 @@
 
 1. **Crawl RSS**: Server định kỳ lấy dữ liệu từ RSS các báo, lưu vào database.
 2. **Lấy danh sách bài viết**: Client gọi API lấy danh sách bài viết theo danh mục, phân trang.
-3. **Xem chi tiết bài viết**: Nếu chưa có nội dung chi tiết, server sẽ crawl nội dung từ trang gốc, lưu lại DB.
+3. **Xem chi tiết bài viết**: Client sẽ crawl nội dung từ trang gốc. Điều này có thể được thực hiện vì app mobile không bị block CORS.
 4. **Đăng nhập/Đăng ký**: Người dùng xác thực qua API, lưu trạng thái đăng nhập.
 5. **Bình luận, bookmark, chia sẻ**: Thực hiện qua các API tương ứng.
 6. **Tối ưu hiệu năng**: Lazy loading, caching (server & client), image optimization, pagination, debounce search.
